@@ -1,0 +1,1 @@
+# diary2026inLaTeX
