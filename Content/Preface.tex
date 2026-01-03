@@ -1,0 +1,55 @@
+%!TEX root = ../main.tex  
+%!TEX options=--shell-escape  
+
+%%%%%%%%%%%%%%%%%%%%%% pref.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample preface
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\preface
+\index{preface}
+%% Please write your preface here
+Here come the golden words
+
+
+%% Please "sign" your preface
+\vspace{1cm}
+\begin{flushright}\noindent
+place(s),\hfill {\it First name  Surname}\\
+month year\hfill {\it First name  Surname}\\
+\end{flushright}
+
+
+\section*{Known issues with typesetting this document}
+\index{750words}
+
+\subsection*{Author index generation}
+The documentclass does not support author indices directly.
+The author index is formatted using the listofauthors command.
+This command is defined in the Preamble. 
+I found this command online.
+I tried to add the multicols environment.
+The rightmost column overlapped with the header line on the first page of the index.
+Hiding this line might solve the problem.
+
+\subsection*{Underscores and the xurl package}
+This package cannot handle underscores in URLs.
+I obtained a memory error.
+The solution was to comment out the xrul package.
+The solution was provided by Dr. LainTze Lim of Overleaf.
+
+\subsection*{Do not overuse labels}
+Add labels only when you need them.
+They will be unreferenced and will trigger many warnings.
+In addition, do not use labels in templates that write TeX files unless you write unique labels.
+Otherwise, you will get a warning about multiple identical labels.
+It is the situation with the month.tex files.
+All twelve had an intro label.
+
+
+RAM may limit 750words to one document per year.
+
+
