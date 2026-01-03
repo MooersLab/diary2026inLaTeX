@@ -1,0 +1,127 @@
+% !TeX program = xetex
+% !TeX options=--shell-escape
+%%%%%%%%%%%%%%%%%%%% 750words2025.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+% Intended LaTeX compiler: pdflatex
+\documentclass[openany,envcountsame,envcountchap]{svmono}
+                                    \usepackage[utf8]{inputenc}
+\usepackage{rotating}
+\usepackage{datetime}
+\usepackage{appendix}
+\usepackage[letterpaper, total={7in, 9in}]{geometry}
+\usepackage[english]{babel}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage[caption=false]{subfig}
+\usepackage{mdframed}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{dsfont}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{verbatim}
+\usepackage[parfill]{parskip}
+\usepackage{imakeidx}
+\usepackage[xetex,plainpages=false]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue, pdfborder={0 0 0}}
+\makeindex[name=main,title=Subject Index,columns=2]
+\makeindex[name=authors,title=Author Index,columns=2]
+\makeindex[name=prompt,title=Writing Prompt Index,columns=1]
+\usepackage{morewrites} % required when opening more than 16 files
+\usepackage[acronym,toc]{glossaries}
+\loadglsentries[type=acronym]{\jobname-acronyms.tex}
+\loadglsentries{\jobname-glossary.tex}
+\makeglossaries
+\glsaddall
+\newfloat{checklist}{H}{checklist}[chapter]
+\floatname{checklist}{Checklist}
+\makeatother
+\usepackage[cc]{titlepic}
+\usepackage{graphicx}
+\usepackage{epigraph,varwidth}
+\usepackage{epipart}
+\renewcommand{\epigraphsize}{\small}
+\setlength{\epigraphwidth}{0.6\textwidth}
+\renewcommand{\textflush}{flushright}
+\renewcommand{\sourceflush}{flushright}
+\newcommand{\epitextfont}{\itshape}
+\newcommand{\episourcefont}{\scshape}
+\makeatletter
+\newsavebox{\epi@textbox}
+\newsavebox{\epi@sourcebox}
+\newlength\epi@finalwidth
+\renewcommand{\epigraph}[2]{%
+\vspace{\beforeepigraphskip}
+{\epigraphsize\begin{\epigraphflush}
+\epi@finalwidth=\z@
+\sbox\epi@textbox{%
+\varwidth{\epigraphwidth}
+\begin{\textflush}\epitextfont#1\end{\textflush}
+\endvarwidth
+}%
+\epi@finalwidth=\wd\epi@textbox
+\sbox\epi@sourcebox{%
+\varwidth{\epigraphwidth}
+\begin{\sourceflush}\episourcefont#2\end{\sourceflush}%
+\endvarwidth
+}%
+\ifdim\wd\epi@sourcebox>\epi@finalwidth
+\epi@finalwidth=\wd\epi@sourcebox
+\fi
+\leavevmode\vbox{
+\hb@xt@\epi@finalwidth{\hfil\box\epi@textbox}
+\vskip1.75ex
+\hrule height \epigraphrule
+\vskip.75ex
+\hb@xt@\epi@finalwidth{\hfil\box\epi@sourcebox}
+}%
+\end{\epigraphflush}
+\vspace{\afterepigraphskip}}}
+\makeatother
+\usepackage{booktabs}
+\renewcommand{\lstlistingname}{Listing}
+\renewcommand{\lstlistlistingname}{List of Listings}
+\lstset{
+basicstyle=\ttfamily\small,
+frame=single,
+breaklines=true,
+numbers=left,
+numberstyle=\tiny,
+captionpos=b
+}
+\usepackage{xcolor}
+\lstset{
+language=Python,
+keywordstyle=\color{blue},
+commentstyle=\color{green!60!black},
+stringstyle=\color{red}
+}
+\date{\today}
+\author{Blaine Mooers}
+
+\title{2027 words}
+\hypersetup{
+ pdfauthor={Blaine Mooers},
+ pdftitle={2027 words},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.1 (Org mode 9.7.11)},
+ pdflang={English}}
+\usepackage{natbib}
+
+\begin{document}
+\input{./Content/0AAAcontents}
+\end{document}
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% End:
