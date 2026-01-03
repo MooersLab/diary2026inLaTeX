@@ -27,7 +27,11 @@ You may have to compile twice the first time to generate the table of contents.
 ## Glossaries
 
 Support for acronyms, glossaries, and symbols is provided.
-Comment the corresponding make commands in 0AAAcontent.tex
+Comment out the corresponding make commands in 0AAAcontent.tex if you do not want these.
+
+## Related repos
+
+- [2024 Diary](https://github.com/MooersLab/diary2024inLaTeX)
 
 ## Directory Structure
 
