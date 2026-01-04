@@ -70,6 +70,18 @@ The month subfolder contains the daily files and a month file that controls the 
 └── svmono.cls
 ```
 
+## Running on Overleaf
+
+You may need to change the bottom of the main.tex file to the following:
+
+```latex
+%%% Local Variables:
+%%% mode: XeLaTeX
+%%% TeX-command-extra-options: "--jobname=main"
+%%% TeX-master: t
+%%% End:
+```
+
 ## Update history
 
 |Version      | Changes                                                                                                                                    | Date                 |
