@@ -251,7 +251,8 @@ These files compile in Overleaf with the above admendment, and they compile in E
 
 |Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
-| Version 0.1 |  Added funding  and update table. Extensive edits of the README.md.                                                                        | 2026 January 3           |
+| Version 0.1 |  Extensive edits of the README.md.                                                                        | 2026 January 3           |
+| Version 0.2 |  Added Planning2026.tex. Adjusted main.tex and 0AAAcontents.tex                       | 2026 January 6          |
 
 ## Funding
 - NIH: R01 CA242845, R01 AI088011
