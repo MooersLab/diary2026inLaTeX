@@ -140,6 +140,8 @@ I was hoping to use org-agenda in the past year, but I failed to use it much.
 There is no reason why you cannot store the weekly plans in a LaTeX file.
 This weekly planning file could be included in the appendix.
 You can write functions that would read through your daily entries of the past week and extract all the unfinished to-do items and insert them into the beginning of the weekly plan for the current week so that you could review them.
+See `Planning2026.tex`.
+Template do-to lists have ben setup for all 366 days.
 
 If you spend a lot of time reading the PDF that is generated, then you might want to have the weekly plan interleaved with your daily entries.
 This can be done by editing the month chapter document that imports the daily entry files.
