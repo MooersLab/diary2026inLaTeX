@@ -44,6 +44,25 @@
 \glsaddall
 \newfloat{checklist}{H}{checklist}[chapter]
 \floatname{checklist}{Checklist}
+
+
+% Needed for timeline table
+\usepackage{colortbl}
+\usepackage{array}
+
+
+% Needed for checklist environment
+\usepackage{enumitem}
+\usepackage{amssymb}
+% Define checkbox symbols
+\newcommand{\unchecked}{$\square$}
+\newcommand{\checked}{$\boxtimes$}
+% Create a reusable checklist environment
+\newlist{checklist}{itemize}{2}
+\setlist[checklist]{label=\unchecked, leftmargin=*, noitemsep}
+
+
+
 \makeatother
 \usepackage[cc]{titlepic}
 \usepackage{graphicx}
